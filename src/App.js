@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Etiqueta1 from './components/Etiqueta1';
+import {ComponenteEj} from './components/ComponenteEj';
 
 
 
@@ -9,6 +10,7 @@ export default function App() {
     <div>
      <h1> Primer Componente</h1>
      <Etiqueta1/>
+     <ComponenteEj titulo="Comp3" nombre="1"icono=":)"/>
      </div>
   );
 }
