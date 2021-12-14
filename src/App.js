@@ -10,7 +10,7 @@ export default function App() {
     <div>
      <h1> Primer Componente</h1>
      <Etiqueta1/>
-     <ComponenteEj titulo="Comp3" nombre="1"icono=":)"/>
+     <ComponenteEj titulo="Componente 3" nombre="1"icono=":)"/>
      </div>
   );
 }
