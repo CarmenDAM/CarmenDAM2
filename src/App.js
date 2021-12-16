@@ -1,16 +1,25 @@
-import React from "react";
-import "./style.css";
-import Etiqueta1 from './components/Etiqueta1';
-import {ComponenteEj} from './components/ComponenteEj';
+import React from 'react';
 
+import { Lista } from './components/Lista';
 
+export function App() {
+  const elementos1 = [
+    { done: false, texto: 'Elemento (Comp 1)', prioridad: 'alta' },
+    { done: true, texto: 'Elemento (Comp 2)', prioridad: 'media' },
+  ];
+  const elementos2 = [
+    { done: false, texto: 'Elemento (Comp 3)' },
+    { done: true, texto: 'Elemento (Comp 4)' },
+    { done: false, texto: 'Elemento (Comp 5)' },
+  ];
+  const elementos3 = [{ done: false, texto: 'Elemento (Comp 6)' }];
 
-export default function App() {
   return (
     <div>
-     <h1> Primer Componente</h1>
-     <Etiqueta1/>
-     <ComponenteEj titulo="Componente 3" nombre="1"icono=":)"/>
-     </div>
+      <h1>Hola (desde componente)</h1>
+      <Lista titulo="Componente 1" icono=":(" elementos={elementos1} />
+      <Lista titulo="Componente 2" icono=":*" elementos={elementos2} />
+      <Lista titulo="Componente 3" icono=";)" elementos={elementos3} />
+    </div>
   );
 }
