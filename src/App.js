@@ -17,9 +17,9 @@ export function App() {
   return (
     <div>
       <h1>Hola (desde componente)</h1>
-      <Lista titulo="Componente 1" icono=":(" elementos={elementos1} />
-      <Lista titulo="Componente 2" icono=":*" elementos={elementos2} />
-      <Lista titulo="Componente 3" icono=";)" elementos={elementos3} />
+      <Lista titulo="Tareas de casa" icono="🏠" elementos={elementos1} />
+      <Lista titulo="Lista de la compra" icono="🛒" elementos={elementos2} />
+      <Lista titulo="Planes con amigos" icono="✨" elementos={elementos3} />
     </div>
   );
 }
